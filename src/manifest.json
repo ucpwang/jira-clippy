@@ -1,6 +1,6 @@
 {
   "name": "JIRA Clippy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Copy jira issues to your clipboard as 'CLC-999: Description + URL'",
   "background": {
