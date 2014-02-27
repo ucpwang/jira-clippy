@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Copy jira issues to your clipboard as 'CLC-999: Description + URL'",
-  "default_locale": "en",
   "background": {
     "scripts": [
       "js/background.js"
