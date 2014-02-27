@@ -1,8 +1,10 @@
 # JIRA Clippy
 
-Copy jira issues to your clipboard as 'CLC-999: Description + URL'.
+![JIRA ](src/jira-clippy-logo-64.png)
 
 [Download](https://chrome.google.com/webstore/detail/jira-clippy/ngpeembgljjbbgeejlcbaddnnejjkhkj)
+
+Copy jira issues to your clipboard as 'CLC-999: Description + URL'.
 
 ## Build
 
