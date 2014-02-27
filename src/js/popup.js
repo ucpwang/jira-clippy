@@ -2,7 +2,7 @@ var pattern = /\[#(.*)\](.*)( -[^-]+)$/;
 
 function doCopy(data) {
   var obj = document.getElementById('copy-clip');
-  obj.style.display = 'block';
+  obj.style.display = '';
   obj.value = data;
   obj.focus();
   obj.select();
@@ -10,16 +10,13 @@ function doCopy(data) {
   obj.style.display = 'none';
 }
 
-
-var bkg = chrome.extension.getBackgroundPage();
 chrome.tabs.query({
-  'active': true
+  active: true,
+  windowId: chrome.windows.WINDOW_ID_CURRENT
 }, function(tabs) {
   var tab = tabs[0];
-  console.log(33, bkg);
-  console.log(tab.title);
-
   var url = tab.url;
+
   var split = tab.title.match(pattern);
   var key = split[1];
   var title = split[2].trim();
