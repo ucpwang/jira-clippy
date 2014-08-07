@@ -21,7 +21,7 @@ chrome.tabs.query({
   var key = split[1];
   var title = split[2].trim();
 
-  var combine = key + ': ' + title + '\n' + url;
+  var combine = key + ': ' + title + '\n\n' + url;
 
   doCopy(combine);
 });
