@@ -1,5 +1,3 @@
-var pattern = /\[#(.*)\](.*)( -[^-]+)$/;
-
 function doCopy(data) {
   var obj = document.getElementById('copy-clip');
   obj.style.display = '';
@@ -17,11 +15,11 @@ chrome.tabs.query({
   var tab = tabs[0];
   var url = tab.url;
 
-  var split = tab.title.match(pattern);
-  var key = split[1];
-  var title = split[2].trim();
+  var title = tab.title.split(' - ');
+  title.pop();
+  title = title.join(' - ');
 
-  var combine = key + ': ' + title + '\n\n' + url;
+  var combine = title + '\n\n' + url;
 
   doCopy(combine);
 });
