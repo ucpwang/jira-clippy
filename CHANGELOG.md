@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.5 - 2014-08-15
+
+- [fix] Use regex and revert to previous format
+- [fix] Remove the querystring from the URL
+
 ## 0.0.4 - 2014-08-13
 
 - [fix] Make it work with the latest version of jira v6.3.1

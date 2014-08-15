@@ -13,11 +13,18 @@ chrome.tabs.query({
   windowId: chrome.windows.WINDOW_ID_CURRENT
 }, function(tabs) {
   var tab = tabs[0];
-  var url = tab.url;
 
+  // Remove the querystring
+  var url = tab.url.split('?')[0];
+
+  // Remove the project name at the end of the title
   var title = tab.title.split(' - ');
   title.pop();
   title = title.join(' - ');
+
+  // Format: XXX-999 - Description
+  var split = title.match(/^\[(.+)\](.+)/);
+  title = split[1] + ' -' + split[2];
 
   var combine = title + '\n\n' + url;
 
