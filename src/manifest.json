@@ -1,8 +1,8 @@
 {
   "name": "JIRA Clippy by ucpwang",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "manifest_version": 2,
-  "description": "Copy jira issues to your clipboard as 'PROJECT-777 - Description(URL)'",
+  "description": "Copy jira issues to your clipboard as 'Description (URL)'",
   "background": {
     "scripts": [
       "js/background.js"

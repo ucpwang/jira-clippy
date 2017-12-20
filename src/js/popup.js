@@ -22,11 +22,11 @@ chrome.tabs.query({
   title.pop();
   title = title.join(' - ');
 
-  // Format: XXX-999 - Description
+  // Format: Description
   var split = title.match(/^\[(.+)\](.+)/);
-  title = split[1] + ' -' + split[2];
+  title = split[2].trim();
 
-  var combine = `${title}(${url})`;
+  var combine = `${title} (${url})`;
 
   doCopy(combine);
 });
