@@ -9,7 +9,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-## install
+## local install
 1. go to `chrome://extensions`
 2. 확장 프로그램 압축
 3. 압축해제된 확장 프로그램 로드
