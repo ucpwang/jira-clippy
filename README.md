@@ -11,9 +11,9 @@ chmod +x build.sh
 ```
 
 ## local install
-1. go to `chrome://extensions`
-2. 확장 프로그램 압축 -> src폴더 경로를 넣고 압축하여, crx, pem 파일 생성
-3. 압축해제된 확장 프로그램 로드 -> src폴더 경로를 넣고 로드
+1. 브라우저에서 `chrome://extensions` 접속
+2. 확장 프로그램 압축 -> src폴더 경로를 넣고 압축(crx, pem 파일 생성)
+3. 압축해제된 확장 프로그램 로드 -> src폴더 경로 넣고 로드
 
 ## Credits
 forked from [JIRA Clippy](https://github.com/christianvuerings/jira-clippy)
