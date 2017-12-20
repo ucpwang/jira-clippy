@@ -26,7 +26,7 @@ chrome.tabs.query({
   var split = title.match(/^\[(.+)\](.+)/);
   title = split[1] + ' -' + split[2];
 
-  var combine = title + '\n\n' + url;
+  var combine = `${title}(${url})`;
 
   doCopy(combine);
 });

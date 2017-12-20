@@ -1,20 +1,18 @@
-# JIRA Clippy
-
+# JIRA Clippy by ucpwang
 ![JIRA ](src/jira-clippy-logo-64.png)
-
-[Download](https://chrome.google.com/webstore/detail/jira-clippy/ngpeembgljjbbgeejlcbaddnnejjkhkj)
-
-Copy jira issues to your clipboard as 'CLC-999 - Description + URL'.
+Copy jira issues to your clipboard as 'PROJECT-777 - Description(URL)'.
 
 ## Build
-
 To build the extension use:
-
 ```
 chmod +x build.sh
 ./build.sh
 ```
 
-## Credits
+## install
+1. go to `chrome://extensions`
+2. 확장 프로그램 압축
+3. 압축해제된 확장 프로그램 로드
 
-Heavely based on [jira-shortcut](https://github.com/mshytikov/jira-shortcut)
+## Credits
+Heavely based on [jira-shortcut](https://github.com/ucpwang/jira-shortcut)
